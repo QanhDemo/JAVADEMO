@@ -2,7 +2,7 @@ package BaiThucHanhLab4.lists;
 
 import java.util.ArrayList;
 import java.util.List;
-import Student.Student;
+import java.student.student.java
 import java.util.Scanner;
 
 public class ArrayListDemo {

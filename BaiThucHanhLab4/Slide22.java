@@ -1,6 +1,7 @@
 package BaiThucHanhLab4;
 
 import java.util.Scanner;
+import java.util.Set;
 
 import javax.sound.sampled.SourceDataLine;
 import javax.swing.text.StyledEditorKit.ForegroundAction;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 
 public class Slide22 {
     public static void main(String[] args) {
-        Sets<Student> hashSet = new Slide22<Student>();
+        Set<Student> hashSet = new Set<>();
         System.out.println("nhap so luong phan tu:");
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();

@@ -1,8 +1,10 @@
 package BaiThucHanhLab4;
 
+import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 
-import javax.swing.event.ListSelectionEvent;
+
 
 public class Student {
     String Fullname;
@@ -16,7 +18,7 @@ public class Student {
         }
     
         // them thong tin (Insert)
-        public static void Insert(lists<Student> array, int n) {
+        public static void Insert(List<Student> array, int n) {
             for (int i = 0; i < n; i++) {
                 Student std = new Student();
                 std.Input();
@@ -25,7 +27,7 @@ public class Student {
         }
     
         // them thong tin (InsertHashSet)
-        public static void InsertHashSet(SetS<Student> array, int m) {
+        public static void InsertHashSet(Set<Student> array, int m) {
             for (int i = 0; i < m; i++) {
                 Student std = new Student();
                 std.Input();
@@ -36,7 +38,7 @@ public class Student {
         // hien thi thong tin(Display)
         public static void Display(List<Student> array) {
             for (int i = 0; i < array.size(); i++) {
-                System.out.printf("Ho ten: %s \t tuoi: %d \n", array.get(i).FullName, array.get(i).Age);
+                System.out.printf("Ho ten: %s \t tuoi: %d \n", array.get(i).Fullname, array.get(i).age);
             }
         }
     
@@ -53,7 +55,7 @@ public class Student {
             Scanner scanner = new Scanner(System.in);
             Name = scanner.nextLine();
             for (int i = 0; i < array.size(); i++) {
-                if (array.get(i).FullName.equals(Name)) {
+                if (array.get(i).Fullname.equals(Name)) {
                     Student std = new Student();
                     std.Input();
                     array.set(i, std);
@@ -85,7 +87,7 @@ public class Student {
             Scanner scanner = new Scanner(System.in);
             Name1 = scanner.nextLine();
             for (int i = 0; i < array.size(); i++) {
-                if (array.get(i).FullName.equals(Name1)) {
+                if (array.get(i).Fullname.equals(Name1)) {
                     array.remove(i);
                     check1 = true;
                 }
@@ -101,8 +103,8 @@ public class Student {
             Scanner scanner = new Scanner(System.in);
             Name2 = scanner.nextLine();
             for (int i = 0; i < array.size(); i++) {
-                if (array.get(i).FullName.equals(Name2)) {
-                    System.out.printf("Ho ten: %s \t Tuoi: %d", array.get(i).FullName, array.get(i).Age);
+                if (array.get(i).Fullname.equals(Name2)) {
+                    System.out.printf("Ho ten: %s \t Tuoi: %d", array.get(i).Fullname, array.get(i).age);
                     check2 = true;
                 }
             }
